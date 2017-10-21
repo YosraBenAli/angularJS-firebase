@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>AngularJS & Firebase Web App</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/justified-nav.css" rel="stylesheet">
+    <link href="../css/signup.css" rel="stylesheet">
+
+</head>
+
+<body ng-controller="HomeCtrl">
+
+<div class="container">
+    <div class="jumbotron" style="padding-bottom:0px;">
+        <h2>AngularJS & Firebase App!</h2>
+    </div>
+    <form class="form-signin" role="form">
+        <input ng-model="user.email" type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+        <input ng-model="user.password" type="password" class="form-control" placeholder="Password" required="">
+        <label class="checkbox">
+            <a href="#"> Sign Up</a>
+        </label>
+        <button type="button" ng-click="signIn()" class="btn btn-lg btn-primary btn-block">Sign In</button>
+    </form>
+    <br>
+    <h4 id="error" class="text-center"></h4>
+    <h4 id="success" class="text-center"></h4>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
